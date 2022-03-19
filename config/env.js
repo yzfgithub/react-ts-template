@@ -105,12 +105,12 @@ function getClientEnvironment(publicUrl) {
     ...stringified,
     __AppPath: `''`,
     __HOST: isTest
-    ? `'http://test.operation.jc2m.jd.com/'`
-    : `'//local.jc2m-ope.jd.com:3000/'`,
+    ? `'testLink'`
+    : `'localLink'`,
     __LoginHost: !isTest
-    ? `'https://ssa.jd.com/sso/logout?ReturnUrl=https%3A//ssa.jd.com%2fsso%2flogin%3fReturnUrl%3d'`
-    : `'http://test.ssa.jd.com/sso/logout?ReturnUrl=http%3A//test.ssa.jd.com%2fsso%2flogin%3fReturnUrl%3d'`,
-    __AppPath: `'jc2moperation/'`,
+    ? `'prodLink'`
+    : `'testLink'`,
+    __AppPath: `'api/'`,
     __MOCK: !isTest && !isProd && process.env.NODE_ENV === 'development',
   
   } };

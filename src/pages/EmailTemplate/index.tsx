@@ -1,14 +1,12 @@
 import React, { useEffect } from 'react';
 import styled from 'styled-components';
 import { observer } from 'mobx-react';
-// import { PathNav } from '@jd/jc2m-portal-components';
 import EmailQueryForm from './EmailTemplateQueryForm';
 import EmailTable from './EmailTemplateTable';
 import { useStore } from '@/stores';
 
 const Email: React.FC = observer(props => {
   const { common, emailTemplateStore } = useStore();
-//   const links = ['京东智能制造平台', __PLATEFORM, '系统管理', '领取权益列表'];
 
   useEffect(() => {
     initOrderData();
@@ -19,7 +17,6 @@ const Email: React.FC = observer(props => {
   };
   return (
     <Wrapper>
-      {/* <PathNav links={links} /> */}
       <div className="shop-order">
         <EmailQueryForm />
         <EmailTable />

@@ -10,10 +10,9 @@ const { history } = rootStore.router;
 function App() {
 
   const { common, router } = useStore();
-  // const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
     common.getAuthMenu().then(() => {
-      // setIsLoading(false);
+
     });
   }, []);
 
